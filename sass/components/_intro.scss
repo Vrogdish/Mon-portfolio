@@ -1,0 +1,16 @@
+.intro {
+  display: flex;
+  margin : 150px 5%;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+
+  & .terminal {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+
+  }
+}
+
+

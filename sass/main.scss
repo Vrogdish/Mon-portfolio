@@ -1,0 +1,94 @@
+@import "./utils/variables";
+@import "./bases/base";
+@import "./bases/typography";
+@import "./layouts/header";
+@import "./layouts/footer";
+@import"./components/banner";
+@import "./layouts/section";
+@import "./components/contact";
+@import "./components/intro";
+@import "./components/photo";
+@import "./components/description";
+@import "./components/tags";
+@import "./components/loader";
+@import "./components/projects";
+@import "./components/slideshow";
+@import "./components/gallery";
+@import "./components/modal";
+
+
+
+@media (max-width:1420px) {
+    .photo img {
+        height: 300px;
+        width: 250px;
+    }
+    
+}
+
+@media (max-width:1100px) {
+    header {
+        padding: 0 20px;
+    }
+
+    .intro {
+        flex-direction: column;
+        padding: 0px 20px;
+        margin: 80px auto;
+    }
+
+    .description p {
+        font-size: 8px;
+    }
+
+
+    .tags {
+        justify-content: space-around;
+        max-width: 100%;
+        margin: 80px auto;
+        & li {
+            font-size: 10px;
+            padding: 5px 20px;
+        }
+    }
+
+    .navbar {
+        gap: 50px;
+
+    }
+
+    .slideshow {
+        display: none;
+    }
+    
+}
+
+@media (max-width : 900px) {
+    .photo img {
+        height: 160px;
+        width: 140px;
+    }
+    
+    .description p {
+        font-size: 7px;
+    }
+}
+
+@media (max-width : 600px) {
+    .photo img {
+        height: 100px;
+        width: 80px;
+        margin: 15px;
+    }
+
+    .border-ul {
+        width: 25px;
+        height: 25px;
+    }
+
+    .border-dr {
+        width: 25px;
+        height: 25px;
+   
+    }
+}

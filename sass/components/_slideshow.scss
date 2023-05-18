@@ -1,0 +1,121 @@
+.slideshow {
+  display: flex;
+  background: linear-gradient(
+    165deg,
+    $color-tablet 0%,
+    darken($color-tablet, 10%) 100%
+  );
+  border-radius: 50px;
+  margin: 100px auto;
+//   opacity: 0;
+//   transform: translate(800px);
+// transition: all 0.5s ease-out;
+}
+
+
+
+.tablet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 400px;
+  width: 700px;
+  border: solid 3px $color-tablet-border;
+}
+
+.dots {
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.dot {
+  height: 6px;
+  width: 6px;
+  border: solid 1px $color-tablet-border;
+  border-radius: 3px;
+  background-color: rgb(155, 126, 126);
+
+  &-selected {
+    color: #ffffff;
+    background: #ec4141;
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #b33030,
+      0 0 30px #ec4141, 0 0 40px #ec4141, 0 0 55px #ec4141, 0 0 75px #ec4141;
+  }
+}
+
+.screen {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  border-top: 2.5px solid $color-tablet-border;
+  border-left: 2.5px solid $color-tablet-border;
+  border-right: 2px solid $color-tablet-border;
+  border-bottom: 2px solid $color-tablet-border;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.filter {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  height: 300px;
+  width: 600px;
+  object-fit: cover;
+  border-radius: 5px;
+  z-index: 2;
+  opacity: 0.3;
+}
+
+.slide {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  height: 300px;
+  width: 600px;
+  object-fit: cover;
+  border-radius: 5px;
+
+}
+
+.tag-line {
+  grid-row: 1;
+  grid-column: 1;
+  text-align: center;
+  margin-top: auto;
+  color: $color-light;
+  background-color: rgba(40, 70, 44, 0.8);
+  padding: 10px 0;
+}
+
+.previous {
+  width: 100px;
+  border: solid 3px $color-tablet-border;
+  border-radius: 50px 0 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   background-color: $color-tablet;
+}
+
+.next {
+  width: 100px;
+  border: solid 3px $color-tablet-border;
+  border-radius: 0px 50px 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   background-color: $color-tablet;
+}
+
+.slideshow i {
+  color: $color-light;
+  font-size: 40px;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px black;
+  color: darken($color-tablet, 10);
+}
+
+

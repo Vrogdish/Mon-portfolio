@@ -1,0 +1,23 @@
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    color: $color-light;
+}
+
+.description p, .description span {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    line-height: 30px;
+    color: $color-light;
+    
+}
+
+.tags li {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    line-height: 30px;
+    color: $color-light;
+}
+
+h1 {
+    font-size: 22px;
+}

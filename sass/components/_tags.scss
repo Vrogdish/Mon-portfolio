@@ -1,0 +1,17 @@
+.tags {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 500px;
+    justify-content: flex-end;
+
+
+
+  & li {
+    border: 3px solid $color-light;
+    text-align: center;
+    padding: 5px 50px;
+ 
+  }
+
+}

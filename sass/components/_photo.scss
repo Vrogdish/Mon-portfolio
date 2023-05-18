@@ -1,0 +1,40 @@
+.photo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+
+}
+
+.photo img {
+    grid-row: 1/5;
+    grid-column: 1/5;
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+   margin: 30px;
+  
+   
+
+}
+
+.border-ul {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    border-top: 3px solid $color-light;
+    border-left: 3px solid $color-light;
+    height: 50px;
+    width: 50px;
+}
+
+.border-dr {
+    grid-row: 4/5;
+    grid-column: 4/5;
+    border-bottom: 3px solid $color-light;
+    border-right: 3px solid $color-light;
+    height: 50px;
+    width: 50px;
+    margin-top: auto;
+    margin-left: auto;
+    
+}

@@ -1,0 +1,11 @@
+footer{
+    margin-top: 100px;
+    background-color: $color-light;
+
+    & p {
+     
+        padding: 20px 50px;
+        text-align: end;
+
+    }
+}

@@ -1,0 +1,61 @@
+.title {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4vw;
+  overflow: hidden;
+  background-image: url( "../assets/background.jpg");
+  background-size: cover ;
+  background-position: center;
+
+  & h1 {
+    text-align: center;
+    font-size: 4vw;
+    color: $color-light;
+    letter-spacing: 20px;
+    animation: title-down 0.8s ease-in-out both 0.5s;
+  }
+
+  & h2 {
+    color: $color-light;
+    letter-spacing: 10px;
+    font-size: 2vw;
+    animation: title-up 0.6s ease-out both;
+  }
+}
+
+@keyframes title-up {
+  from {
+    transform: translate(-1000px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  // 80% {
+  //   transform: translate(100px);
+  // }
+
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes title-down {
+  from {
+    transform: translate(1000px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(-80px);
+  }
+
+  to {
+    transform: translate(0);
+  }
+}

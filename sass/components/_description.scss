@@ -1,0 +1,32 @@
+.description {
+ margin-top: 20px;
+  & span {
+    animation: cursor 1.5s infinite;
+    display: block;
+  }
+  & .reload {
+    margin-left: 60%;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    & i {
+      color: $color-light;
+      font-size: 30px;
+    }
+  }
+}
+
+@keyframes cursor {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
